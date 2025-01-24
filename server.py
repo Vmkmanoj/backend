@@ -49,7 +49,7 @@ def add_student():
         cursor.close()
         connection.close()
 
-        return jsonify({"message": "Student added successfully!"}), 201
+        return jsonify({"message": "Student added successfully!", "success" :True}), 201
 
     except Exception as e:
         print(f"Error while inserting data: {e}")
